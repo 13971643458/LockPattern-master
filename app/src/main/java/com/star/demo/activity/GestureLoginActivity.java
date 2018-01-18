@@ -99,6 +99,8 @@ public class GestureLoginActivity extends AppCompatActivity {
      */
     private void loginGestureSuccess() {
         Toast.makeText(GestureLoginActivity.this, "success", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(GestureLoginActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 
     /**

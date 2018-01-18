@@ -69,7 +69,7 @@ public class CreateGestureActivity extends Activity {
 		public void onPatternComplete(List<LockPatternView.Cell> pattern) {
 			//Log.e(TAG, "--onPatternDetected--");
 			if(mChosenPattern == null && pattern.size() >= 4) {
-				mChosenPattern = new ArrayList<LockPatternView.Cell>(pattern);
+				mChosenPattern = new ArrayList<>(pattern);
 				updateStatus(Status.CORRECT, pattern);
 			} else if (mChosenPattern == null && pattern.size() < 4) {
 				updateStatus(Status.LESSERROR, pattern);

@@ -23,6 +23,9 @@
         <activity
             android:name="com.star.demo.activity.GestureLoginActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.star.demo.activity.MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
